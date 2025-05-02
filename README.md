@@ -15,7 +15,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system that lever
 
 <br>
 
-## ⚠️ Problem Statement
+## Problem Statement
 
 Environmental regulations are becoming mandatory for more companies and are notoriously difficult to navigate. Key challenges include:
 
