@@ -243,4 +243,3 @@ Special thanks to all the ESG experts and professionals who provided valuable in
 ---
 
 *Raylow: Facilitating CSRD reporting for SMEs through AI-powered software*
-
