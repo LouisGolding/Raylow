@@ -1,0 +1,143 @@
+[
+  {
+    "collection": "users",
+    "documentId": "e7Vya6sEtVdvDlxENi18iJSE4ea2",
+    "data": {
+      "isAdmin": true,
+      "updatedAt": {
+        "seconds": 1743946852,
+        "nanoseconds": 668000000
+      },
+      "onboardingCompleted": true
+    }
+  },
+  {
+    "collection": "userOnboarding",
+    "documentId": "e7Vya6sEtVdvDlxENi18iJSE4ea2",
+    "data": {
+      "industry": "retail",
+      "isAdmin": true,
+      "sustainability_goals": [
+        "waste_management",
+        "water_conservation"
+      ],
+      "previous_reporting": false,
+      "completedAt": {
+        "seconds": 1743946852,
+        "nanoseconds": 667000000
+      },
+      "companyName": "saes",
+      "companySize": "11-50",
+      "completed": true
+    }
+  },
+  {
+    "collection": "dashboardData",
+    "documentId": "e7Vya6sEtVdvDlxENi18iJSE4ea2",
+    "data": {
+      "stats": {
+        "complianceScore": 73,
+        "reductionTarget": 29,
+        "totalSales": 8834,
+        "totalEmissions": 9097
+      },
+      "lastUpdated": {
+        "seconds": 1744987867,
+        "nanoseconds": 130000000
+      },
+      "chartData": {
+        "monthlyEmissions": [
+          516,
+          542,
+          619,
+          647,
+          539,
+          562,
+          497,
+          386,
+          390,
+          369,
+          486,
+          519
+        ],
+        "yearlyReduction": 8,
+        "emissionsByScope": {
+          "scope2": 30,
+          "scope3": 60,
+          "scope1": 10
+        }
+      },
+      "tables": {
+        "recentReports": [
+          {
+            "type": "CSRD",
+            "title": "CSRD Report - 4/18/2025",
+            "date": {
+              "seconds": 1744987866,
+              "nanoseconds": 822000000
+            },
+            "status": "Submitted",
+            "id": "M2XcLi2jXFfD221lrmLS"
+          },
+          {
+            "type": "CSRD",
+            "date": {
+              "seconds": 1743946868,
+              "nanoseconds": 64000000
+            },
+            "id": "3dr9fY7imWstwEJ63ANc",
+            "title": "CSRD Report - 4/6/2025",
+            "status": "Submitted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "collection": "csrdSubmissions",
+    "documentId": "3dr9fY7imWstwEJ63ANc",
+    "data": {
+      "timestamp": {
+        "seconds": 1743946867,
+        "nanoseconds": 961000000
+      },
+      "userName": "Anonymous",
+      "userId": "e7Vya6sEtVdvDlxENi18iJSE4ea2",
+      "formData": {
+        "data": {},
+        "governance": {},
+        "stakeholder": {},
+        "target": {},
+        "materiality": {}
+      }
+    }
+  },
+  {
+    "collection": "csrdSubmissions",
+    "documentId": "M2XcLi2jXFfD221lrmLS",
+    "data": {
+      "userName": "Anonymous",
+      "formData": {
+        "target": {},
+        "stakeholder": {},
+        "data": {},
+        "governance": {},
+        "materiality": {
+          "impactTopics": [
+            "biodiversity"
+          ],
+          "materialTopics": [
+            "biodiversity"
+          ],
+          "impactSeverity": "1",
+          "impactLikelihood": "1"
+        }
+      },
+      "timestamp": {
+        "seconds": 1744987866,
+        "nanoseconds": 807000000
+      },
+      "userId": "e7Vya6sEtVdvDlxENi18iJSE4ea2"
+    }
+  }
+]
