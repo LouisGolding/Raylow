@@ -41,23 +41,45 @@ Environmental regulations are becoming mandatory for more companies and are noto
 
 ```mermaid
 graph TD
+    %% Document processing pipeline
     A[Document Processing] --> B[Semantic Chunking]
     B --> C[Vector Database Creation]
-    U[User Company Data] --> D[Sustainability Expert RAG System]
-    C --> D
-    D --> E1[Query Rewriting]
-    E1 --> E2[Retrieval]
-    E2 --> E3[Reranking]
-    E3 --> E4[Context Assembly]
-    E4 --> E5[Personalized Response Generation]
-    D --> F[Evaluation Framework]
+    
+    %% User query and document interaction
+    U1[User Query] --> D1[Query Rewriting]
+    C --> D2[Similarity Search]
+    D1 --> D2
+    D2 --> D3[Retrieval of Relevant Documents]
+    D3 --> D4[Cross-Encoder Reranking]
+    
+    %% User company context integration
+    U2[User Company Data] --> D5[Personalized Response Generation]
+    D4 --> D5
+
+    %% Evaluation steps
+    D5 --> F[Evaluation Framework]
     F --> G[Evaluation Metrics]
     
-    style D fill:#4CAF50,stroke:#333,stroke-width:2px,color:white
-    style F fill:#2196F3,stroke:#333,stroke-width:2px,color:white
-    style U fill:#FF9800,stroke:#333,stroke-width:2px,color:white
-```
+    %% RAG subgraph
+    subgraph "Sustainability Expert RAG"
+        D1[Query Rewriting]
+        D2[Similarity Search]
+        D3[Retrieval of Relevant Documents]
+        D4[Cross-Encoder Reranking]
+        D5[Personalized Response Generation]
+    end
 
+    %% Styling classes
+    classDef purple fill:#9C27B0,color:white,stroke:#333,stroke-width:1px
+    classDef green fill:#4CAF50,color:white,stroke:#333,stroke-width:1px
+    classDef orange fill:#FF9800,color:white,stroke:#333,stroke-width:1px
+    classDef blue fill:#2196F3,color:white,stroke:#333,stroke-width:1px
+    
+    class A,B,C purple
+    class D1,D2,D3,D4,D5 green
+    class U1,U2 orange
+    class F,G blue
+```
 <br>
 
 ### 🔄 RAG Pipeline in Detail
