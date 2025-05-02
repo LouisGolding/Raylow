@@ -1,8 +1,0 @@
-.DS_Store
-venv/
-venvRaylow/
-.env
-__pycache__/
-*.pyc
-*.pyo
-Raylow
